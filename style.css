@@ -1,33 +1,52 @@
-.calculator {
-    width: 250px;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  #display {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-  }
-  
-  button {
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    background-color: #f0f0f0;
-  }
-  
-  button:hover {
-    background-color: #e0e0e0;
-  }
-  
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif,;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgb(224, 189, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+  background: rgb(38, 1, 54);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow:-8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgb(0,0,0, 0.2) ;
+  background: transparent;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form input.equal{
+  width: 145px;
+}
